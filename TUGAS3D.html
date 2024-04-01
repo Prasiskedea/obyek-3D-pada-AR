@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D Objects</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene background="color: #ECECEC">
+        <!-- Environment -->
+        <a-sky color="#6EBAA7"></a-sky>
+        <a-ground color="#8B5A2B" height="100" width="100"></a-ground>
+
+        <!-- Object 1: Cube -->
+        <a-box position="-3 2 -5" rotation="45 45 45" color="orange" scale="2 2 2"></a-box>
+
+        <!-- Object 2: Cylinder -->
+        <a-cylinder position="3 1.5 -5" radius="1.5" height="3" color="blue" material="shiny"></a-cylinder>
+
+        <!-- Object 3: Sphere -->
+        <a-sphere position="0 3 -5" radius="1.5" color="yellow" material="metallic"></a-sphere>
+
+        <!-- Object 4: Plane -->
+        <a-plane position="-3 0 -5" rotation="-90 0 0" width="4" height="4" color="red" material="flat"></a-plane>
+
+        <!-- Object 5: Tetrahedron -->
+        <a-tetrahedron position="3 2.5 -5" radius="1.5" color="purple" material="wireframe"></a-tetrahedron>
+    </a-scene>
+</body>
+</html>
